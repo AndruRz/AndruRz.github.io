@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los botones se acomoden en más de una fila si es necesario */
+
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+button:focus {
+    outline: none;
+}
+
+.nombre {
+    position: fixed;
+    bottom: 10px;  /* Cambia de 'top' a 'bottom' */
+    left: 10px;
+    font-size: 20px;
+    color: yellow;
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+
+/*Responsive*/
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .menu {
+        flex-direction: column; /* Coloca los botones en vertical en pantallas pequeñas */
+    }
+}
+
+/* Media queries para pantallas muy pequeñas como móviles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+/* Hacer el nombre responsivo */
+@media (max-width: 768px) {
+    .nombre {
+        font-size: 18px;
+        bottom: 5px;  /* Ajusta para pantallas más pequeñas */
+        left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nombre {
+        font-size: 16px;
+        bottom: 5px;
+        left: 5px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cabina</title>
+    <link rel="stylesheet" href="./css/cabina.css">
+</head>
+
+<body>
+
+<!-- Imagen en la esquina superior izquierda -->
+<img src="./imagenes/DALL_E-2024-09-19-22.40-removebg-preview.png" alt="Imagen en la esquina" class="corner-image">
+
+
+  <!-- Escenario Inicio -->    
+    <div class="cockpit">
+        <div class="sky">
+            <!-- Sol -->
+            <div class="sun"></div>
+            
+            <!-- Nubes -->
+            <div class="cloud" id="cloud1"></div>
+            <div class="cloud" id="cloud2"></div>
+            <div class="cloud" id="cloud3"></div>
+            <div class="cloud" id="cloud4"></div>
+            <div class="cloud" id="cloud5"></div>
+            <div class="cloud" id="cloud6"></div>
+            <div class="cloud" id="cloud7"></div>
+            <div class="cloud" id="cloud8"></div>
+            <div class="cloud" id="cloud9"></div>
+
+                        <!-- Estela de un avión lejano -->
+            <div class="plane-trail-front" id="plane-trail-top-left"></div>
+            <div class="plane-trail-front" id="plane-trail-top-right"></div>
+
+                        <!-- Aves que vienen de frente -->
+                        <div class="bird" id="bird1"></div>
+                        <div class="bird" id="bird2"></div>
+
+                        
+        </div>
+    </div>
+  <!-- Escenario Fin -->    
+
+  <!-- Cabina Inicio -->   
+  <div class="cabina">
+        <!-- Panel de Instrumentos -->
+        <div class="instrument-panel">
+            <!-- Radares -->
+            <div class="radar" id="radar1"></div>
+            <div class="radar" id="radar2"></div>
+            <div class="radar" id="radar3"></div>
+            <div class="radar" id="radar4"></div>
+    
+            <!-- Botones -->
+            <div class="buttons">
+              <button class="button red" id="button1" ></button>   <!-- Inicio del Simulador -->
+              <button class="button blue" id="button2"></button>    <!-- Hablar de la Trayectoria de un avion -->
+              <button class="button green" id="button3"></button>  <!-- Hablar de vectores de viento Cruzado -->
+              <button class="button yellow" id="button4"></button>  <!-- Simulacion para usar unos aviones-->
+              <button class="button purple" id="button5"></button>
+              <button class="button orange" id="button6"></button>
+              <button class="button gray" id="button7"></button>
+              <button class="button exit-button" id="button8">Salir</button>
+
+                <!-- Colocar tu nombre debajo de los botones -->
+  <p class="author-name">Realizado por Andre Rodriguez Perez</p>
+            </div>
+    
+
+        </div>
+
+</div>
+
+<div class="cabina superior">
+    <!-- Botones en la cabina superior -->
+    <div class="buttons-superior">
+      <button class="button-superior" id="sup-button1"></button>
+      <button class="button-superior" id="sup-button2"></button>
+      <button class="button-superior" id="sup-button3"></button>
+  </div>
+
+  <!-- Palancas en la cabina superior -->
+  <div class="levers-container">
+      <div class="lever" id="lever1"></div>
+      <div class="lever" id="lever2"></div>
+  </div>
+
+</div>
+  <!-- Cabina Fin -->   
+
+
+
+<script src="./js/ScriptDeInicio.js"></script>
+<script src="./js/TrayectoriaDeAvion.js"></script>
+<script src="./js/vectores.js"></script>
+<script src="./js/planoCartesianoGeogebra.js"></script>
+<script src="./js/simuladordepeso.js"></script>
+
+<script src="./movimientopalancas.js"></script> 
+<script src="./js/generarGrafica.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.2.0/distrib/jsxgraphcore.js"></script>
+
+
+
+</body>
+
+</html>
