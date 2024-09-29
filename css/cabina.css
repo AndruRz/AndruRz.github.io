@@ -426,3 +426,101 @@ body, html {
     font-size: 14px;
     color: #fff; /* Puedes cambiar el color si lo prefieres */
 }
+
+
+/*Responsive*/
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sun {
+        width: 80px;
+        height: 80px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .cloud {
+        width: 100px;
+        height: 30px;
+        animation-duration: 60s;
+    }
+
+    /* Ajustes en la cabina */
+    .cabina {
+        height: 35%; /* Aumenta la altura para dispositivos móviles */
+        padding: 10px; /* Ajustar el padding */
+    }
+
+    .cabina.superior {
+        height: 12%;
+    }
+
+    /* Ajustes en botones y contenedores */
+    .buttons .button {
+        width: 20px;
+        height: 20px;
+        margin: 3px;
+    }
+
+    .buttons-superior .button-superior {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    /* Ajustes en palancas */
+    .lever {
+        width: 10px;
+        height: 70px;
+    }
+
+    /* Ajustes en los radares */
+    .radar {
+        width: 70px;
+        height: 70px;
+        border: 4px solid #0f0;
+    }
+}
+
+/* Responsividad para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .cabina {
+        height: 40%; /* Mayor altura en pantallas pequeñas */
+    }
+
+    .cabina.superior {
+        height: 15%;
+    }
+
+    /* Ajustes de tamaño de botones */
+    .buttons .button, .buttons-superior .button-superior {
+        width: 15px;
+        height: 15px;
+    }
+
+    .lever {
+        width: 8px;
+        height: 60px;
+    }
+
+    .radar {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #0f0;
+    }
+
+    .instrument-panel {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a 2 columnas en lugar de 5 */
+    }
+
+    .buttons .exit-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .corner-image {
+        width: 200px; /* Reducir el tamaño de la imagen */
+        top: 55px; /* Ajustar la posición de la imagen */
+        left: -15px; /* Ajustar la posición de la imagen */
+    }
+}
