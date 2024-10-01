@@ -412,7 +412,7 @@ body, html {
 
 .corner-image {
     position: absolute;
-    top: 310px; /* Ajusta este valor para bajar la imagen */
+    top: 460px; /* Ajusta este valor para bajar la imagen */
     left: -20px; /* Mantén la imagen cerca de la esquina izquierda */
     width: 400px; /* Ajusta el tamaño de la imagen si es necesario */
     height: auto; /* Mantén la proporción de la imagen */
